@@ -1,0 +1,28 @@
+body {
+	background-color: lightgreen;
+}
+
+h1 {
+	font-style: bold;
+	font-family: 'papyrus';
+	font-size: 64px;
+	color: red;
+}
+
+h2 {
+	font-size: 36px;
+	color: hotpink;
+}
+
+h3 {
+	color: hotpink;
+}
+
+img {
+	border: solid hotpink 3px;
+	border-radius: 20px;
+}
+
+strong {
+	font-weight: 900;
+}

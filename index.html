@@ -28,19 +28,22 @@
 
 
       <script type='text/x-handlebars-template' id='flowers-template'>
-        {{#each flowers}}
-            <div class="col-xs-3">
-              <h3><strong>Name:  {{name}}</strong></h3>
-              <p>Color:  {{color}}</p>
-              <p>Petals:  {{petals}}</p>
-              <p>Parent 1:  {{parent1}}</p>
-              <p>Parent 2:  {{parent2}}</p>
-            </div>
-        {{/each}}
+        {{#grouped_each 3 flowers}}
+          <div class="row">
+            {{#each this}}
+              <div class="col-xs-4">
+                <img src="{{imageURL}}" class="img-responsive">
+                <h3><strong>Name:</strong>  {{name}}</strong></h3>
+                <h4><strong>Color:</strong>  {{color}}</h4>
+                <h4><strong>Petals:</strong>  {{petals}}<h4>
+                <h4><strong>Parent 1:</strong>  {{parent1}}</h4>
+                <h4><strong>Parent 2:</strong>  {{parent2}}</h4>
+                <h4>{{description}}</h4>
+              </div>
+            {{/each}}
+          </div>
+        {{/grouped_each}}
       </script>
-<!--          <img src="{{album.images.[2].url}}">
-              <p>{{describe()}}</p>
- -->
     </div>
   </div>
   
