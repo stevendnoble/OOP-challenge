@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- set viewport to device width to make site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <title>SFGA Parade of Flowers</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2 class="text-center">San Francisco First Annual GA</h2>
+        <h1 class="text-center">Parade of Flowers</h1>
+				<hr>
+      </div>
+    </div>
+    <div class="row "></div>
+    <div id="results">
+
+
+      <script type='text/x-handlebars-template' id='flowers-template'>
+        {{#each flowers}}
+            <div class="col-xs-3">
+              <h3><strong>Name:  {{name}}</strong></h3>
+              <p>Color:  {{color}}</p>
+              <p>Petals:  {{petals}}</p>
+              <p>Parent 1:  {{parent1}}</p>
+              <p>Parent 2:  {{parent2}}</p>
+            </div>
+        {{/each}}
+      </script>
+<!--          <img src="{{album.images.[2].url}}">
+              <p>{{describe()}}</p>
+ -->
+    </div>
+  </div>
+  
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- handlebars js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
